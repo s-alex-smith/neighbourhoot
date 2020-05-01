@@ -62,7 +62,7 @@ const MapScreen = props => {
       <Button title="Get user location" onPress={getLocationHandler} />
       <MapPreview style={styles.mapPreview} location={pickedLocation}>
         {isFetching ? (
-          <ActivityIndicator size="large" />
+          <ActivityIndicator size="small" />
         ) : (
           <Text>No location chosen yet!</Text>
         )}

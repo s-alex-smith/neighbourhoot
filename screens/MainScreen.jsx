@@ -41,7 +41,7 @@ const MainScreen = props => {
     <ScrollView>
       <View>
         <Text>This is the main Screen</Text>
-        <MapScreen />
+
         {images.map((bird, i) => {
           console.log(bird);
           return (
@@ -60,6 +60,7 @@ const MainScreen = props => {
           <Text>Lorem ipsum dolor etc.</Text>
         </Overlay>
         <ImagePicker />
+        <MapScreen />
       </View>
     </ScrollView>
   );
