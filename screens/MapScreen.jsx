@@ -1,12 +1,13 @@
 import React from "react";
 import { View, ScrollView } from "react-native";
 import LocationPicker from "../components/LocationPicker";
+import MapView from "react-native-maps";
 
-const MapScreen = () => {
+const MapScreen = ({ navigation }) => {
   return (
     <ScrollView>
       <View>
-        <LocationPicker />
+        <LocationPicker navigation={navigation} />
       </View>
     </ScrollView>
   );

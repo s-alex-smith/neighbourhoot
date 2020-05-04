@@ -9,6 +9,7 @@ import MainScreen from "./screens/MainScreen";
 import WelcomeScreen from "./screens/WelcomeScreen";
 import BirdOverlay from "./components/BirdOverlay";
 import MapScreen from "./screens/MapScreen";
+import NewPlaceScreen from "./screens/NewPlaceScreen";
 
 const instructions = Platform.select({
   ios: `Press Cmd+R to reload,\nCmd+D or shake for dev menu`,
@@ -46,6 +47,11 @@ export default function App() {
           name="Overlay"
           component={BirdOverlay}
           options={{ title: "Overlay" }}
+        />
+        <RootStack.Screen
+          name="NewPlace"
+          component={NewPlaceScreen}
+          options={{ title: "New Place Screen" }}
         />
 
         <RootStack.Screen
