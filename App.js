@@ -8,6 +8,7 @@ import HomeScreen from "./screens/HomeScreen";
 import MainScreen from "./screens/MainScreen";
 import WelcomeScreen from "./screens/WelcomeScreen";
 import BirdOverlay from "./components/BirdOverlay";
+import MapScreen from "./screens/MapScreen";
 
 const instructions = Platform.select({
   ios: `Press Cmd+R to reload,\nCmd+D or shake for dev menu`,
@@ -30,6 +31,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <RootStack.Navigator>
+        <RootStack.Screen name="Map" component={MapScreen} />
         <RootStack.Screen
           name="Home"
           component={HomeScreen}
