@@ -49,7 +49,6 @@ const MainScreen = ({ navigation }) => {
         })}
 
         <ImagePicker /*onImageTaken={imageTakenHandler}*/ />
-        {/* <MapScreen /> */}
       </View>
     </ScrollView>
   );

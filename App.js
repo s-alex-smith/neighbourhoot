@@ -40,7 +40,7 @@ export default function App() {
         />
         <RootStack.Screen
           name="Main"
-          component={MainView}
+          component={MainScreen}
           options={{ title: "Main" }}
         />
         <RootStack.Screen
