@@ -1,5 +1,4 @@
-const JasminsBirds = require('./data/JasminsBirds');
-const SamsBirds = require('./data/SamsBirds');
+const devBirds = require('../../data/devBirds');
 
 const AWS = require('aws-sdk');
 
@@ -10,13 +9,10 @@ AWS.config.update({
 
 const docClient = new AWS.DynamoDB.DocumentClient();
 
-const JasminsBirdsMapped = JasminsBirds.map((bird) => {
+const devBirdsMapped = devBirds.map((bird) => {
   return { PutRequest: { Item: bird } };
 });
-const SamsBirdsMapped = SamsBirds.map((bird) => {
-  return { PutRequest: { Item: bird } };
-});
-const Birds = [...JasminsBirdsMapped, ...SamsBirdsMapped];
+const Birds = [...devBirdsMapped];
 
 const params = {
   RequestItems: {
