@@ -6,8 +6,8 @@ import * as Permissions from "expo-permissions";
 
 import { getBirdsToPopulateMap } from "../apiRequest/apiRequests";
 
-const NewPlaceScreen = ({ userLocation }) => {
-  console.log(userLocation);
+const NewPlaceScreen = props => {
+  // console.log(userLocation, "<<<<<<<<");
   const [databaseLocations, setDatabaseLocation] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   // const [selectedLocation, setSelectedLocation] = useState();
@@ -17,6 +17,20 @@ const NewPlaceScreen = ({ userLocation }) => {
     latitudeDelta: 0.0922,
     longitudeDelta: 0.0421
   });
+
+  useEffect(() => {
+    // console.log(props.route.params, "<<<<<");
+    // const { userLocation } = props.route.params;
+    // console.log(userLocation, "<<<");
+    // if (userLocation) {
+    //   setMapRegion({
+    //     latitude: userLocation.lat,
+    //     longitude: userLocation.lng,
+    //     latitudeDelta: 0.0922,
+    //     longitudeDelta: 0.0421
+    //   });
+    // }
+  }, []);
 
   // if (userLocation) {
   //   setMapRegion({

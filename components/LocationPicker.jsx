@@ -21,7 +21,7 @@ const LocationPicker = props => {
     if (result.status !== "granted") {
       Alert.alert(
         "Insufficient permissions.",
-        "You need to grant locaction permissions to use this app.",
+        "You need to grant location permissions to use this app.",
         [{ text: "Okay" }]
       );
       return false;
@@ -53,7 +53,7 @@ const LocationPicker = props => {
   };
 
   const pickOnMapHandler = () => {
-    props.navigation.navigate("NewPlace");
+    props.navigation.navigate("NewPlace", { userLocation: pickedLocation });
   };
 
   return (
@@ -73,7 +73,7 @@ const LocationPicker = props => {
         <Button title="Get user location" onPress={getLocationHandler} />
         <Button title="Pick on map" onPress={pickOnMapHandler} />
       </View>
-      <NewPlaceScreen userLocation={pickedLocation} />
+      <NewPlaceScreen />
     </View>
   );
 };

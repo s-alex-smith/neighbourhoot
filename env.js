@@ -1,5 +1,5 @@
 const keys = {
-	googleApiKey: "AIzaSyCvyLf30hFjzcyUIqFSR816JSzd3ROTHPY",
+  googleApiKey: "AIzaSyDCYSkGxoSoXIn1jVa8BVxVQ4geYG1TBdA"
 };
 
 export default keys;
