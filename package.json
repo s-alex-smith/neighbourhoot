@@ -1,4 +1,7 @@
 {
+  "name": "team-project",
+  "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "android": "react-native run-android",
@@ -47,5 +50,16 @@
   "jest": {
     "preset": "react-native"
   },
-  "private": true
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakedheath123/team-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jakedheath123/team-project/issues"
+  },
+  "homepage": "https://github.com/jakedheath123/team-project#readme"
 }
