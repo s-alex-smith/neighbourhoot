@@ -1,4 +1,5 @@
 const devBirds = require('../../data/devBirds');
+const { generateUUID } = require('../../utils/utils');
 
 const AWS = require('aws-sdk');
 
@@ -9,10 +10,11 @@ AWS.config.update({
 
 const docClient = new AWS.DynamoDB.DocumentClient();
 
-const devBirdsMapped = devBirds.map((bird) => {
-  return { PutRequest: { Item: bird } };
+const Birds = devBirds.map((bird) => {
+  const newBird = { ...bird, bird_id: generateUUID() };
+
+  return { PutRequest: { Item: newBird } };
 });
-const Birds = [...devBirdsMapped];
 
 const params = {
   RequestItems: {

@@ -1,3 +1,5 @@
+const crypto = require('crypto');
+
 exports.findDistance = (point1, point2) => {
   const { lat1, lon1 } = point1;
   const { lat2, lon2 } = point2;
@@ -31,3 +33,5 @@ exports.fetchBirdsByFeatures = (features, birds) => {
     return isMatch;
   });
 };
+
+exports.generateUUID = () => crypto.randomBytes(16).toString('hex');
