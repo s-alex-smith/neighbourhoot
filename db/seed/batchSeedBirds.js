@@ -12,15 +12,13 @@ const docClient = new AWS.DynamoDB.DocumentClient();
 
 const Birds = devBirds.map((bird) => {
   const newBird = { ...bird, bird_id: generateUUID() };
-
   return { PutRequest: { Item: newBird } };
 });
 
 const params = {
   RequestItems: {
-    Birds
-  },
-  ReturnValues: 'ALL_OLD'
+    devBirds: Birds
+  }
 };
 
 docClient.batchWrite(params, (err, data) => {

@@ -8,7 +8,10 @@
     "ios": "react-native run-ios",
     "web": "expo start --web",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "build-table": "node db/seed/buildBirdTable.js",
+    "delete-table": "node db/seed/removeBirdTable.js",
+    "seed-table": "node db/seed/batchSeedBirds.js"
   },
   "dependencies": {
     "@react-native-community/datetimepicker": "^2.3.2",
