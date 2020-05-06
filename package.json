@@ -27,7 +27,6 @@
     "aws-sdk": "^2.667.0",
     "axios": "^0.19.2",
     "cors": "^2.8.5",
-    "crypto": "^1.0.1",
     "expo": "^37.0.8",
     "expo-image-picker": "^8.1.0",
     "expo-location": "^8.1.0",

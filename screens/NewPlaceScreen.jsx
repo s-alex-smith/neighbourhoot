@@ -1,12 +1,18 @@
-import React, { useState, useEffect } from "react";
-import { View, ScrollView, StyleSheet, ActivityIndicator } from "react-native";
-import LocationPicker from "../components/LocationPicker";
-import MapView, { Marker } from "react-native-maps";
-import * as Permissions from "expo-permissions";
+import React, { useState, useEffect } from 'react';
+import {
+  Text,
+  View,
+  ScrollView,
+  StyleSheet,
+  ActivityIndicator
+} from 'react-native';
+import LocationPicker from '../components/LocationPicker';
+// import MapView, { Marker } from "react-native-maps";
+import * as Permissions from 'expo-permissions';
 
-import { getBirdsToPopulateMap } from "../apiRequest/apiRequests";
+import { getBirdsToPopulateMap } from '../apiRequest/apiRequests';
 
-const NewPlaceScreen = props => {
+const NewPlaceScreen = (props) => {
   // console.log(userLocation, "<<<<<<<<");
   const [databaseLocations, setDatabaseLocation] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -42,7 +48,7 @@ const NewPlaceScreen = props => {
   // }
 
   const getBirds = () => {
-    getBirdsToPopulateMap().then(response => {
+    getBirdsToPopulateMap().then((response) => {
       setDatabaseLocation(response);
       // setIsLoading(false);
     });
@@ -52,7 +58,7 @@ const NewPlaceScreen = props => {
     getBirds();
   }, []);
 
-  const selectLocationHandler = event => {
+  const selectLocationHandler = (event) => {
     setSelectedLocation({
       lat: event.nativeEvent.coordinate.latitude,
       lng: event.nativeEvent.coordinate.longitude
@@ -69,28 +75,31 @@ const NewPlaceScreen = props => {
   // }
 
   return (
-    <MapView
-      style={styles.map}
-      region={mapRegion}
-      // onPress={selectLocationHandler}>
-      // {markerCoordinates && (
-      // 	<Marker title='Picked Location' coordinate={markerCoordinates}></Marker>
-      // )}
-    >
-      {databaseLocations.map((location, index) => {
-        const locationSpec = {
-          latitude: location.lat,
-          longitude: location.lng
-        };
-        return (
-          <Marker
-            key={index}
-            title={location.comName}
-            coordinate={locationSpec}
-          ></Marker>
-        );
-      })}
-    </MapView>
+    <View>
+      <Text>The map goes here...</Text>
+    </View>
+    // <MapView
+    //   style={styles.map}
+    //   region={mapRegion}
+    //   // onPress={selectLocationHandler}>
+    //   // {markerCoordinates && (
+    //   // 	<Marker title='Picked Location' coordinate={markerCoordinates}></Marker>
+    //   // )}
+    // >
+    //   {databaseLocations.map((location, index) => {
+    //     const locationSpec = {
+    //       latitude: location.lat,
+    //       longitude: location.lng
+    //     };
+    //     return (
+    //       <Marker
+    //         key={index}
+    //         title={location.comName}
+    //         coordinate={locationSpec}
+    //       ></Marker>
+    //     );
+    //   })}
+    // </MapView>
   );
 };
 
