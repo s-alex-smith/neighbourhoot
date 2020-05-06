@@ -1,7 +1,11 @@
-const { fetchBirdsByFeatures } = require('./lambda');
+const {
+  fetchBirdsByFeatures,
+  findDistance,
+  compareDistance
+} = require('./utils');
 const birds = require('../backend/data/devBirds');
 
-describe('Searching by features', () => {
+describe('fetchBirdsByFeatures', () => {
   it('it returns an array', () => {
     expect(fetchBirdsByFeatures()).toEqual([]);
   });
@@ -68,3 +72,5 @@ describe('Searching by features', () => {
     expect(fetchBirdsByFeatures(features, data)[0]).not.toBe(data);
   });
 });
+
+describe('compareDistance', () => {});

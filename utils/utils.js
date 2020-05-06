@@ -35,3 +35,5 @@ exports.fetchBirdsByFeatures = (features, birds) => {
 };
 
 exports.generateUUID = () => crypto.randomBytes(16).toString('hex');
+
+exports.compareDistance = () => {};
