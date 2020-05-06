@@ -4,7 +4,7 @@
   "dev": true,
   "minify": false,
 
-  "urlRandomness": "ze-nad",
+  "urlRandomness": "4m-xhr",
 
   "https": true
 }
