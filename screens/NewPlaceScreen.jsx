@@ -76,7 +76,7 @@ const NewPlaceScreen = (props) => {
 
   return (
     <View>
-      <Text>The map goes here...</Text>
+      <Text>Map goes here</Text>
     </View>
     // <MapView
     //   style={styles.map}

@@ -7,11 +7,9 @@ import LoginScreen from './screens/LoginScreen';
 import HomeScreen from './screens/HomeScreen';
 import MainScreen from './screens/MainScreen';
 import WelcomeScreen from './screens/WelcomeScreen';
-
 import BirdOverlay from './components/BirdOverlay';
 import MapScreen from './screens/MapScreen';
 import NewPlaceScreen from './screens/NewPlaceScreen';
-
 import ProfileScreen from './screens/ProfileScreen';
 
 const instructions = Platform.select({
@@ -41,6 +39,17 @@ export default function App() {
           options={{ title: 'Main' }}
         />
         <RootStack.Screen
+          name='Map'
+          component={MapScreen}
+          options={{ title: 'Map' }}
+        />
+        <RootStack.Screen
+          name='NewPlace'
+          component={NewPlaceScreen}
+          options={{ title: 'New Place Screen' }}
+        />
+
+        <RootStack.Screen
           name='Home'
           component={HomeScreen}
           options={{ title: 'Home' }}
@@ -51,12 +60,6 @@ export default function App() {
           options={{ title: 'Welcome' }}
         />
         <RootStack.Screen
-          name='NewPlace'
-          component={NewPlaceScreen}
-          options={{ title: 'New Place Screen' }}
-        />
-
-        <RootStack.Screen
           name='Login'
           component={LoginScreen}
           options={{ title: 'Login' }}
@@ -66,12 +69,12 @@ export default function App() {
           component={SignUpScreen}
           options={{ title: 'Sign Up' }}
         />
-
         <RootStack.Screen
-          name='Map'
-          component={MapScreen}
-          options={{ title: 'Map' }}
+          name='Welcome'
+          component={WelcomeScreen}
+          options={{ title: 'Welcome' }}
         />
+
         <RootStack.Screen
           name='Profile'
           component={ProfileScreen}

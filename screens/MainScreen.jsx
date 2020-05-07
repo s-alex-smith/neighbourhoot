@@ -3,12 +3,11 @@ import { View, Text, StyleSheet, Image, ScrollView } from 'react-native';
 import { getAllBirdsByArea } from '../apiRequest/apiRequests';
 import ImagePicker from '../components/ImagePicker';
 import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
-import MapScreen from './MapScreen';
-
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faMapMarker, faPlusCircle } from '@fortawesome/free-solid-svg-icons';
-
+import MapScreen from './MapScreen';
 const MainScreen = ({ navigation }) => {
+  const { navigate } = navigation;
   const [images, updateImages] = useState([]);
   const [location, updateLocation] = useState('?lat=0&lon=0');
   const [isLoading, updateIsLoading] = useState(true);
@@ -17,8 +16,10 @@ const MainScreen = ({ navigation }) => {
   //   setImages({ img: imagePath });
   // };
 
+  const getAreaBirdsUrl = `https://rmx5oedl1b.execute-api.eu-west-2.amazonaws.com/development/birds${location}`;
+
   useEffect(() => {
-    getAllBirdsByArea(location)
+    getAllBirdsByArea(getAreaBirdsUrl)
       .then((birds) => {
         updateImages(birds);
       })
@@ -37,11 +38,12 @@ const MainScreen = ({ navigation }) => {
   return (
     <>
       <ScrollView>
-        <View>
-          <Text>Birds in your area</Text>
+        <View style={styles.container}>
+          <Text style={styles.text}>Birds in your area</Text>
           {images.map((bird, i) => {
             return (
               <TouchableWithoutFeedback
+                style={styles.birds}
                 onPress={() => {
                   navigation.navigate('MyModal', { ...bird });
                 }}
@@ -50,8 +52,7 @@ const MainScreen = ({ navigation }) => {
               </TouchableWithoutFeedback>
             );
           })}
-          <ImagePicker /*onImageTaken={imageTakenHandler}*/ />
-          <MapScreen />
+          {/* <ImagePicker onImageTaken={imageTakenHandler} /> */}
         </View>
       </ScrollView>
       <View style={styles.iconContainer}>
@@ -88,18 +89,19 @@ const styles = StyleSheet.create({
   birds: {
     height: 150,
     display: 'flex',
-    width: '35%',
-    margin: 10,
-    padding: 10
+    width: 150,
+    // borderWidth: 1,
+    // borderColor: "black",
+    marginBottom: 40
   },
   container: {
     flex: 1,
     flexDirection: 'row',
     flexWrap: 'wrap',
-    alignItems: 'flex-start',
+    alignItems: 'center',
     backgroundColor: '#2D9676',
-    justifyContent: 'center',
-    alignItems: 'center'
+    justifyContent: 'space-around',
+    paddingBottom: 30
   },
   text: {
     color: 'white',
@@ -110,25 +112,25 @@ const styles = StyleSheet.create({
     fontFamily: 'Roboto',
     marginBottom: 40
   },
-  buttonContainer: {
-    backgroundColor: '#6D3716',
-    borderRadius: 5,
-    padding: 10,
-    margin: 20,
-    width: 100
-  },
-  buttonText: {
-    fontSize: 20,
-    color: 'white',
-    textAlign: 'center'
-  },
-  mainText: {
-    color: 'black',
-    fontSize: 15,
-    textAlign: 'center',
-    paddingLeft: 30,
-    paddingRight: 30
-  },
+  // buttonContainer: {
+  //   backgroundColor: "#6D3716",
+  //   borderRadius: 5,
+  //   padding: 10,
+  //   margin: 20,
+  //   width: 100,
+  // },
+  // buttonText: {
+  //   fontSize: 20,
+  //   color: "white",
+  //   textAlign: "center",
+  // },
+  // mainText: {
+  //   color: "black",
+  //   fontSize: 15,
+  //   textAlign: "center",
+  //   paddingLeft: 30,
+  //   paddingRight: 30,
+  // },
   iconContainer: {
     backgroundColor: '#2D9676',
     borderTopColor: 'black',

@@ -7,7 +7,8 @@ const MapScreen = ({ navigation }) => {
   return (
     <ScrollView>
       <View>
-        <LocationPicker navigation={navigation} />
+        <Text>Map here</Text>
+        {/* <LocationPicker navigation={navigation} /> */}
       </View>
     </ScrollView>
   );
