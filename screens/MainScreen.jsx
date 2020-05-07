@@ -8,10 +8,11 @@ import { faMapMarker, faPlusCircle } from '@fortawesome/free-solid-svg-icons';
 import MapScreen from './MapScreen';
 const MainScreen = ({ navigation }) => {
   const { navigate } = navigation;
+
   const [images, updateImages] = useState([]);
   const [location, updateLocation] = useState('?lat=0&lon=0');
   const [isLoading, updateIsLoading] = useState(true);
-
+  const [isVisible, updateIsVisible] = useState(true);
   // const imageTakenHandler = imagePath => {
   //   setImages({ img: imagePath });
   // };
@@ -34,7 +35,6 @@ const MainScreen = ({ navigation }) => {
         <Text>Loading!</Text>
       </View>
     );
-
   return (
     <>
       <ScrollView>
@@ -63,12 +63,19 @@ const MainScreen = ({ navigation }) => {
           onPress={() => navigate('Map')}
           style={{
             alignSelf: 'flex-start',
-            top: 10,
+            top: 20,
             bottom: 10,
             left: 20,
             flex: 1
           }}
         />
+        <TouchableOpacity
+          style={styles.buttonContainer}
+          onPress={() => {
+            navigate('FilterModal');
+          }}>
+          <Text style={styles.buttonText}>Filter</Text>
+        </TouchableOpacity>
 
         <FontAwesomeIcon
           icon={faPlusCircle}
@@ -76,7 +83,7 @@ const MainScreen = ({ navigation }) => {
           onPress={() => navigate('Profile')}
           style={{
             alignSelf: 'flex-end',
-            bottom: 20,
+            bottom: 25,
             right: 20,
             flex: 1
           }}
@@ -85,6 +92,7 @@ const MainScreen = ({ navigation }) => {
     </>
   );
 };
+
 const styles = StyleSheet.create({
   birds: {
     height: 150,
@@ -92,7 +100,8 @@ const styles = StyleSheet.create({
     width: 150,
     // borderWidth: 1,
     // borderColor: "black",
-    marginBottom: 40
+    marginBottom: 40,
+    borderRadius: 20
   },
   container: {
     flex: 1,
@@ -100,8 +109,8 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     alignItems: 'center',
     backgroundColor: '#2D9676',
-    justifyContent: 'space-around',
-    paddingBottom: 30
+    justifyContent: 'space-around'
+    // paddingBottom: 30
   },
   text: {
     color: 'white',
@@ -109,21 +118,22 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textTransform: 'uppercase',
     textAlign: 'center',
-    fontFamily: 'Roboto',
+    fontFamily: 'System',
     marginBottom: 40
   },
-  // buttonContainer: {
-  //   backgroundColor: "#6D3716",
-  //   borderRadius: 5,
-  //   padding: 10,
-  //   margin: 20,
-  //   width: 100,
-  // },
-  // buttonText: {
-  //   fontSize: 20,
-  //   color: "white",
-  //   textAlign: "center",
-  // },
+  buttonContainer: {
+    backgroundColor: '#6D3716',
+    borderRadius: 5,
+    padding: 10,
+    margin: 20,
+    width: 100,
+    alignSelf: 'center'
+  },
+  buttonText: {
+    fontSize: 10,
+    color: 'white',
+    textAlign: 'center'
+  },
   // mainText: {
   //   color: "black",
   //   fontSize: 15,
@@ -135,7 +145,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#2D9676',
     borderTopColor: 'black',
     borderTopWidth: 4,
-    height: 60
+    height: 60,
+    justifyContent: 'space-around'
   }
 });
 
