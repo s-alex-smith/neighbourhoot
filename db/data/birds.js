@@ -1458,206 +1458,206 @@ const birds = [
 ];
 
 const birds2 = [
-  {
-    user_id: 'Neighbourhoot',
-    bird_name: 'Egyptian Goose',
-    location: { lat: 51.5713884, lon: -0.1700306 },
-    img_url:
-      'https://upload.wikimedia.org/wikipedia/commons/6/6a/Alopochen-aegyptiacus.jpg',
-    features: { wingspan: 140, chest: 'cream', back: 'brown', head: 'grey' }
-  },
-  {
-    user_id: 'Neighbourhoot',
-    bird_name: 'Mallard (male)',
-    location: { lat: 51.5713884, lon: -0.1700306 },
-    img_url:
-      'https://upload.wikimedia.org/wikipedia/commons/b/bf/Anas_platyrhynchos_male_female_quadrat.jpg',
-    features: { wingspan: 90, chest: 'cream', back: 'brown', head: 'green' }
-  },
-  {
-    user_id: 'Neighbourhoot',
-    bird_name: 'Mallard (female)',
-    location: { lat: 51.5713884, lon: -0.1700306 },
-    img_url:
-      'https://upload.wikimedia.org/wikipedia/commons/b/bf/Anas_platyrhynchos_male_female_quadrat.jpg',
-    features: { wingspan: 90, chest: 'brown', back: 'brown', head: 'brown' }
-  },
-  {
-    user_id: 'Neighbourhoot',
-    bird_name: 'Mandarin Duck (male)',
-    location: { lat: 51.5713884, lon: -0.1700306 },
-    img_url:
-      'https://upload.wikimedia.org/wikipedia/commons/4/43/Pair_of_mandarin_ducks.jpg',
-    features: { wingspan: 70, chest: 'white', back: 'brown', head: 'green' }
-  },
-  {
-    user_id: 'Neighbourhoot',
-    bird_name: 'Mandarin Duck (female)',
-    location: { lat: 51.5713884, lon: -0.1700306 },
-    img_url:
-      'https://upload.wikimedia.org/wikipedia/commons/4/43/Pair_of_mandarin_ducks.jpg',
-    features: { wingspan: 70, chest: 'grey', back: 'brown', head: 'grey' }
-  },
-  {
-    user_id: 'Neighbourhoot',
-    bird_name: 'Mute Swan',
-    location: { lat: 51.5713884, lon: -0.1700306 },
-    img_url:
-      'https://upload.wikimedia.org/wikipedia/commons/3/35/Mute_swan_Vrhnika.jpg',
-    features: { wingspan: 220, chest: 'white', back: 'white', head: 'white' }
-  },
-  {
-    user_id: 'Neighbourhoot',
-    bird_name: 'Canada Goose',
-    location: { lat: 51.5713884, lon: -0.1700306 },
-    img_url:
-      'https://upload.wikimedia.org/wikipedia/commons/4/40/Canada_goose_on_Seedskadee_NWR_%2827826185489%29.jpg',
-    features: { wingspan: 150, chest: 'grey', back: 'brown', head: 'black' }
-  },
-  {
-    user_id: 'Neighbourhoot',
-    bird_name: 'Eurasian Jackdaw',
-    location: { lat: 53.3584288, lon: -2.0396805 },
-    img_url:
-      'https://upload.wikimedia.org/wikipedia/commons/b/b1/Coloeus_monedula_-Ham_Common%2C_London_Borough_of_Richmond_upon_Thames%2C_England-8.jpg',
-    features: { wingspan: 70, chest: 'black', back: 'black', head: 'grey' }
-  },
-  {
-    user_id: 'Neighbourhoot',
-    bird_name: 'European Starling',
-    location: { lat: 53.3584288, lon: -2.0396805 },
-    img_url:
-      'https://upload.wikimedia.org/wikipedia/commons/7/7d/Toulouse_-_Sturnus_vulgaris_-_2012-02-26_-_3.jpg',
-    features: { wingspan: 37, chest: 'green', back: 'brown', head: 'brown' }
-  },
-  {
-    user_id: 'Neighbourhoot',
-    bird_name: 'European Goldfinch',
-    location: { lat: 53.3584288, lon: -2.0396805 },
-    img_url:
-      'https://upload.wikimedia.org/wikipedia/commons/7/7c/Carduelis_carduelis_close_up.jpg',
-    features: { wingspan: 23, chest: 'cream', back: 'yellow', head: 'red' }
-  },
-  {
-    user_id: 'Neighbourhoot',
-    bird_name: 'Common Swift',
-    location: { lat: 53.3584288, lon: -2.0396805 },
-    img_url:
-      'https://upload.wikimedia.org/wikipedia/commons/b/be/Apus_apus_-Barcelona%2C_Spain-8_%281%29.jpg',
-    features: { wingspan: 38, chest: 'brown', back: 'brown', head: 'brown' }
-  },
-  {
-    user_id: 'Neighbourhoot',
-    bird_name: 'Eurasian Blackbird (male)',
-    location: { lat: 53.3584288, lon: -2.0396805 },
-    img_url:
-      'https://upload.wikimedia.org/wikipedia/commons/a/a9/Common_Blackbird.jpg',
-    features: { wingspan: 35, chest: 'black', back: 'black', head: 'black' }
-  },
-  {
-    user_id: 'Neighbourhoot',
-    bird_name: 'Eurasian Blackbird (female)',
-    location: { lat: 53.3584288, lon: -2.0396805 },
-    img_url:
-      'https://upload.wikimedia.org/wikipedia/commons/7/72/Common_blackbird_%28Turdus_merula_mauretanicus%29_female.jpg',
-    features: { wingspan: 35, chest: 'brown', back: 'brown', head: 'brown' }
-  },
-  {
-    user_id: 'Neighbourhoot',
-    bird_name: 'European Robin',
-    location: { lat: 55.954103, lon: -4.549041 },
-    img_url:
-      'https://upload.wikimedia.org/wikipedia/commons/f/f3/Erithacus_rubecula_with_cocked_head.jpg',
-    features: { wingspan: 21, chest: 'red', back: 'brown', head: 'brown' }
-  },
-  {
-    user_id: 'Neighbourhoot',
-    bird_name: 'Common Chaffinch (male)',
-    location: { lat: 55.954103, lon: -4.549041 },
-    img_url:
-      'https://en.wikipedia.org/wiki/File:Chaffinch_(Fringilla_coelebs).jpg',
-    features: { wingspan: 26, chest: 'red', back: 'brown', head: 'grey' }
-  },
-  {
-    user_id: 'Neighbourhoot',
-    bird_name: 'Common Chaffinch (female)',
-    location: { lat: 55.954103, lon: -4.549041 },
-    img_url:
-      'https://en.wikipedia.org/wiki/File:Fulda_Buchfinkweibchen_Juni_2012.JPG',
-    features: { wingspan: 26, chest: 'cream', back: 'brown', head: 'brown' }
-  },
-  {
-    user_id: 'Neighbourhoot',
-    bird_name: 'Common Wood-Pigeon',
-    location: { lat: 55.954103, lon: -4.549041 },
-    img_url:
-      'https://upload.wikimedia.org/wikipedia/commons/f/f5/Columba_palumbus_-garden_post-8.jpg',
-    features: { wingspan: 75, chest: 'pink', back: 'grey', head: 'grey' }
-  },
-  {
-    user_id: 'Neighbourhoot',
-    bird_name: 'Eurasian Magpie',
-    location: { lat: 55.954103, lon: -4.549041 },
-    img_url:
-      'https://upload.wikimedia.org/wikipedia/commons/e/e7/Magpie_arp.jpg',
-    features: { wingspan: 56, chest: 'white', back: 'black', head: 'black' }
-  },
-  {
-    user_id: 'Neighbourhoot',
-    bird_name: 'Barn Swallow',
-    location: { lat: 57.355333, lon: -2.507852 },
-    img_url:
-      'https://upload.wikimedia.org/wikipedia/commons/2/24/Landsvale.jpg',
-    features: { wingspan: 33, chest: 'white', back: 'blue', head: 'blue' }
-  },
-  {
-    user_id: 'Neighbourhoot',
-    bird_name: 'Rock Pigeon',
-    location: { lat: 55.5512068, lon: -4.6363114 },
-    img_url:
-      'https://upload.wikimedia.org/wikipedia/commons/5/56/Paloma_brav%C3%ADa_%28Columba_livia%29%2C_Palacio_de_Nymphenburg%2C_M%C3%BAnich%2C_Alemania01.JPG',
-    features: { wingspan: 66, chest: 'grey', back: 'grey', head: 'grey' }
-  },
-  {
-    user_id: 'Neighbourhoot',
-    bird_name: 'Herring Gull',
-    location: { lat: 55.5512068, lon: -4.6363114 },
-    img_url:
-      'https://upload.wikimedia.org/wikipedia/commons/f/f2/Larus_argentatus01.jpg',
-    features: { wingspan: 57, chest: 'white', back: 'grey', head: 'white' }
-  },
-  {
-    user_id: 'Neighbourhoot',
-    bird_name: 'Rook',
-    location: { lat: 55.5512068, lon: -4.6363114 },
-    img_url:
-      'https://upload.wikimedia.org/wikipedia/commons/6/63/Rook_at_Slimbridge_Wetland_Centre%2C_Gloucestershire%2C_England_22May2019_arp.jpg',
-    features: { wingspan: 88, chest: 'black', back: 'black', head: 'black' }
-  },
-  {
-    user_id: 'Neighbourhoot',
-    bird_name: 'House Sparrow (male)',
-    location: { lat: 55.5512068, lon: -4.6363114 },
-    img_url:
-      'https://upload.wikimedia.org/wikipedia/commons/6/6e/Passer_domesticus_male_%2815%29.jpg',
-    features: { wingspan: 23, chest: 'grey', back: 'brown', head: 'grey' }
-  },
-  {
-    user_id: 'Neighbourhoot',
-    bird_name: 'House Sparrow (female)',
-    location: { lat: 55.5512068, lon: -4.6363114 },
-    img_url:
-      'https://en.wikipedia.org/wiki/File:House_Sparrow,_England_-_May_09.jpg',
-    features: { wingspan: 23, chest: 'grey', back: 'brown', head: 'brown' }
-  },
-  {
-    user_id: 'Neighbourhoot',
-    bird_name: 'Carrion Crow',
-    location: { lat: 55.5512068, lon: -4.6363114 },
-    img_url:
-      'https://upload.wikimedia.org/wikipedia/commons/a/a9/Corvus_corone_-near_Canford_Cliffs%2C_Poole%2C_England-8.jpg',
-    features: { wingspan: 100, chest: 'black', back: 'black', head: 'black' }
-  },
+  // {
+  //   user_id: 'Neighbourhoot',
+  //   bird_name: 'Egyptian Goose',
+  //   location: { lat: 51.5713884, lon: -0.1700306 },
+  //   img_url:
+  //     'https://upload.wikimedia.org/wikipedia/commons/6/6a/Alopochen-aegyptiacus.jpg',
+  //   features: { wingspan: 140, chest: 'cream', back: 'brown', head: 'grey' }
+  // },
+  // {
+  //   user_id: 'Neighbourhoot',
+  //   bird_name: 'Mallard (male)',
+  //   location: { lat: 51.5713884, lon: -0.1700306 },
+  //   img_url:
+  //     'https://upload.wikimedia.org/wikipedia/commons/b/bf/Anas_platyrhynchos_male_female_quadrat.jpg',
+  //   features: { wingspan: 90, chest: 'cream', back: 'brown', head: 'green' }
+  // },
+  // {
+  //   user_id: 'Neighbourhoot',
+  //   bird_name: 'Mallard (female)',
+  //   location: { lat: 51.5713884, lon: -0.1700306 },
+  //   img_url:
+  //     'https://upload.wikimedia.org/wikipedia/commons/b/bf/Anas_platyrhynchos_male_female_quadrat.jpg',
+  //   features: { wingspan: 90, chest: 'brown', back: 'brown', head: 'brown' }
+  // },
+  // {
+  //   user_id: 'Neighbourhoot',
+  //   bird_name: 'Mandarin Duck (male)',
+  //   location: { lat: 51.5713884, lon: -0.1700306 },
+  //   img_url:
+  //     'https://upload.wikimedia.org/wikipedia/commons/4/43/Pair_of_mandarin_ducks.jpg',
+  //   features: { wingspan: 70, chest: 'white', back: 'brown', head: 'green' }
+  // },
+  // {
+  //   user_id: 'Neighbourhoot',
+  //   bird_name: 'Mandarin Duck (female)',
+  //   location: { lat: 51.5713884, lon: -0.1700306 },
+  //   img_url:
+  //     'https://upload.wikimedia.org/wikipedia/commons/4/43/Pair_of_mandarin_ducks.jpg',
+  //   features: { wingspan: 70, chest: 'grey', back: 'brown', head: 'grey' }
+  // },
+  // {
+  //   user_id: 'Neighbourhoot',
+  //   bird_name: 'Mute Swan',
+  //   location: { lat: 51.5713884, lon: -0.1700306 },
+  //   img_url:
+  //     'https://upload.wikimedia.org/wikipedia/commons/3/35/Mute_swan_Vrhnika.jpg',
+  //   features: { wingspan: 220, chest: 'white', back: 'white', head: 'white' }
+  // },
+  // {
+  //   user_id: 'Neighbourhoot',
+  //   bird_name: 'Canada Goose',
+  //   location: { lat: 51.5713884, lon: -0.1700306 },
+  //   img_url:
+  //     'https://upload.wikimedia.org/wikipedia/commons/4/40/Canada_goose_on_Seedskadee_NWR_%2827826185489%29.jpg',
+  //   features: { wingspan: 150, chest: 'grey', back: 'brown', head: 'black' }
+  // },
+  // {
+  //   user_id: 'Neighbourhoot',
+  //   bird_name: 'Eurasian Jackdaw',
+  //   location: { lat: 53.3584288, lon: -2.0396805 },
+  //   img_url:
+  //     'https://upload.wikimedia.org/wikipedia/commons/b/b1/Coloeus_monedula_-Ham_Common%2C_London_Borough_of_Richmond_upon_Thames%2C_England-8.jpg',
+  //   features: { wingspan: 70, chest: 'black', back: 'black', head: 'grey' }
+  // },
+  // {
+  //   user_id: 'Neighbourhoot',
+  //   bird_name: 'European Starling',
+  //   location: { lat: 53.3584288, lon: -2.0396805 },
+  //   img_url:
+  //     'https://upload.wikimedia.org/wikipedia/commons/7/7d/Toulouse_-_Sturnus_vulgaris_-_2012-02-26_-_3.jpg',
+  //   features: { wingspan: 37, chest: 'green', back: 'brown', head: 'brown' }
+  // },
+  // {
+  //   user_id: 'Neighbourhoot',
+  //   bird_name: 'European Goldfinch',
+  //   location: { lat: 53.3584288, lon: -2.0396805 },
+  //   img_url:
+  //     'https://upload.wikimedia.org/wikipedia/commons/7/7c/Carduelis_carduelis_close_up.jpg',
+  //   features: { wingspan: 23, chest: 'cream', back: 'yellow', head: 'red' }
+  // },
+  // {
+  //   user_id: 'Neighbourhoot',
+  //   bird_name: 'Common Swift',
+  //   location: { lat: 53.3584288, lon: -2.0396805 },
+  //   img_url:
+  //     'https://upload.wikimedia.org/wikipedia/commons/b/be/Apus_apus_-Barcelona%2C_Spain-8_%281%29.jpg',
+  //   features: { wingspan: 38, chest: 'brown', back: 'brown', head: 'brown' }
+  // },
+  // {
+  //   user_id: 'Neighbourhoot',
+  //   bird_name: 'Eurasian Blackbird (male)',
+  //   location: { lat: 53.3584288, lon: -2.0396805 },
+  //   img_url:
+  //     'https://upload.wikimedia.org/wikipedia/commons/a/a9/Common_Blackbird.jpg',
+  //   features: { wingspan: 35, chest: 'black', back: 'black', head: 'black' }
+  // },
+  // {
+  //   user_id: 'Neighbourhoot',
+  //   bird_name: 'Eurasian Blackbird (female)',
+  //   location: { lat: 53.3584288, lon: -2.0396805 },
+  //   img_url:
+  //     'https://upload.wikimedia.org/wikipedia/commons/7/72/Common_blackbird_%28Turdus_merula_mauretanicus%29_female.jpg',
+  //   features: { wingspan: 35, chest: 'brown', back: 'brown', head: 'brown' }
+  // },
+  // {
+  //   user_id: 'Neighbourhoot',
+  //   bird_name: 'European Robin',
+  //   location: { lat: 55.954103, lon: -4.549041 },
+  //   img_url:
+  //     'https://upload.wikimedia.org/wikipedia/commons/f/f3/Erithacus_rubecula_with_cocked_head.jpg',
+  //   features: { wingspan: 21, chest: 'red', back: 'brown', head: 'brown' }
+  // },
+  // {
+  //   user_id: 'Neighbourhoot',
+  //   bird_name: 'Common Chaffinch (male)',
+  //   location: { lat: 55.954103, lon: -4.549041 },
+  //   img_url:
+  //     'https://en.wikipedia.org/wiki/File:Chaffinch_(Fringilla_coelebs).jpg',
+  //   features: { wingspan: 26, chest: 'red', back: 'brown', head: 'grey' }
+  // },
+  // {
+  //   user_id: 'Neighbourhoot',
+  //   bird_name: 'Common Chaffinch (female)',
+  //   location: { lat: 55.954103, lon: -4.549041 },
+  //   img_url:
+  //     'https://en.wikipedia.org/wiki/File:Fulda_Buchfinkweibchen_Juni_2012.JPG',
+  //   features: { wingspan: 26, chest: 'cream', back: 'brown', head: 'brown' }
+  // },
+  // {
+  //   user_id: 'Neighbourhoot',
+  //   bird_name: 'Common Wood-Pigeon',
+  //   location: { lat: 55.954103, lon: -4.549041 },
+  //   img_url:
+  //     'https://upload.wikimedia.org/wikipedia/commons/f/f5/Columba_palumbus_-garden_post-8.jpg',
+  //   features: { wingspan: 75, chest: 'pink', back: 'grey', head: 'grey' }
+  // },
+  // {
+  //   user_id: 'Neighbourhoot',
+  //   bird_name: 'Eurasian Magpie',
+  //   location: { lat: 55.954103, lon: -4.549041 },
+  //   img_url:
+  //     'https://upload.wikimedia.org/wikipedia/commons/e/e7/Magpie_arp.jpg',
+  //   features: { wingspan: 56, chest: 'white', back: 'black', head: 'black' }
+  // },
+  // {
+  //   user_id: 'Neighbourhoot',
+  //   bird_name: 'Barn Swallow',
+  //   location: { lat: 57.355333, lon: -2.507852 },
+  //   img_url:
+  //     'https://upload.wikimedia.org/wikipedia/commons/2/24/Landsvale.jpg',
+  //   features: { wingspan: 33, chest: 'white', back: 'blue', head: 'blue' }
+  // },
+  // {
+  //   user_id: 'Neighbourhoot',
+  //   bird_name: 'Rock Pigeon',
+  //   location: { lat: 55.5512068, lon: -4.6363114 },
+  //   img_url:
+  //     'https://upload.wikimedia.org/wikipedia/commons/5/56/Paloma_brav%C3%ADa_%28Columba_livia%29%2C_Palacio_de_Nymphenburg%2C_M%C3%BAnich%2C_Alemania01.JPG',
+  //   features: { wingspan: 66, chest: 'grey', back: 'grey', head: 'grey' }
+  // },
+  // {
+  //   user_id: 'Neighbourhoot',
+  //   bird_name: 'Herring Gull',
+  //   location: { lat: 55.5512068, lon: -4.6363114 },
+  //   img_url:
+  //     'https://upload.wikimedia.org/wikipedia/commons/f/f2/Larus_argentatus01.jpg',
+  //   features: { wingspan: 57, chest: 'white', back: 'grey', head: 'white' }
+  // },
+  // {
+  //   user_id: 'Neighbourhoot',
+  //   bird_name: 'Rook',
+  //   location: { lat: 55.5512068, lon: -4.6363114 },
+  //   img_url:
+  //     'https://upload.wikimedia.org/wikipedia/commons/6/63/Rook_at_Slimbridge_Wetland_Centre%2C_Gloucestershire%2C_England_22May2019_arp.jpg',
+  //   features: { wingspan: 88, chest: 'black', back: 'black', head: 'black' }
+  // },
+  // {
+  //   user_id: 'Neighbourhoot',
+  //   bird_name: 'House Sparrow (male)',
+  //   location: { lat: 55.5512068, lon: -4.6363114 },
+  //   img_url:
+  //     'https://upload.wikimedia.org/wikipedia/commons/6/6e/Passer_domesticus_male_%2815%29.jpg',
+  //   features: { wingspan: 23, chest: 'grey', back: 'brown', head: 'grey' }
+  // },
+  // {
+  //   user_id: 'Neighbourhoot',
+  //   bird_name: 'House Sparrow (female)',
+  //   location: { lat: 55.5512068, lon: -4.6363114 },
+  //   img_url:
+  //     'https://en.wikipedia.org/wiki/File:House_Sparrow,_England_-_May_09.jpg',
+  //   features: { wingspan: 23, chest: 'grey', back: 'brown', head: 'brown' }
+  // },
+  // {
+  //   user_id: 'Neighbourhoot',
+  //   bird_name: 'Carrion Crow',
+  //   location: { lat: 55.5512068, lon: -4.6363114 },
+  //   img_url:
+  //     'https://upload.wikimedia.org/wikipedia/commons/a/a9/Corvus_corone_-near_Canford_Cliffs%2C_Poole%2C_England-8.jpg',
+  //   features: { wingspan: 100, chest: 'black', back: 'black', head: 'black' }
+  // }
   {
     user_id: 'Neighbourhoot',
     bird_name: 'Lesser Black-backed Gull',
@@ -1700,5 +1700,6 @@ const birds2 = [
   }
 ];
 
-console.log('Birds:', birds.length);
-console.log('Birds 2:', birds2.length);
+console.log(birds2.length);
+
+module.exports = birds2;
